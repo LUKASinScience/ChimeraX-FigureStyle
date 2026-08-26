@@ -4,12 +4,13 @@
   <Author>Lukas W. Bauer (AI-assisted development by Claude, Anthropic)</Author>
   <Email></Email>
   <URL>https://github.com/LUKASinScience</URL>
-  <Synopsis>Named style templates and batch rendering for publication figures</Synopsis>
+  <Synopsis>Reusable named style templates for publication-ready figures</Synopsis>
   <Description>
-    FigureStyle lets you define, save, and apply named visual style templates
-    in ChimeraX. Templates store lighting, background, silhouettes, cartoon style,
-    and export settings. A batch renderer applies a template to a folder of
-    structures and saves PNG images.
+    FigureStyle lets you define, save, and apply named visual style templates in
+    ChimeraX. Templates store lighting, background, silhouettes, per-type cartoon
+    style, coloring (including AlphaFold pLDDT), and image export settings — set
+    up a look once, then apply it to any structure with one click or from the
+    command line.
   </Description>
   <Categories>
     <Category name="General"/>
@@ -22,7 +23,7 @@
   </Dependencies>
   <Classifiers>
     <ChimeraXClassifier>ChimeraX :: Tool :: FigureStyle :: General ::
-      Publication figure style templates and batch rendering</ChimeraXClassifier>
+      Reusable named style templates for publication-ready figures</ChimeraXClassifier>
     <ChimeraXClassifier>ChimeraX :: Command :: figurestyle apply ::
       General :: Apply a named style template to the current session</ChimeraXClassifier>
   </Classifiers>

@@ -1,8 +1,9 @@
 # ChimeraX-FigureStyle
 
-Named, reusable figure-style templates for ChimeraX. Define lighting, background, cartoon style,
-coloring, and export settings once, save them under a name, and apply them to any structure with
-one click — instead of retyping the same `.cxc` commands for every figure.
+You rewrite the same lighting, background, cartoon-style, and export commands for every figure?
+FigureStyle turns that into a one-click template: define lighting, per-secondary-structure cartoon
+style, coloring (including AlphaFold pLDDT), and export settings once, save it under a name, and
+apply it to any structure — from the GUI or the command line.
 
 ## Opening the tool
 
