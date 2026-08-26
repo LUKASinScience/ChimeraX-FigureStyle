@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Build artifacts (ChimeraX bundle build / packaging)
+build/
+dist/
+*.whl
+
+# Editors
+.vscode/
+.idea/
+
+# Claude Code local session state (machine-specific, not project docs)
+.claude/
+CLAUDE.md
+
+# macOS
+.DS_Store

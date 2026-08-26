@@ -1,0 +1,34 @@
+<BundleInfo name="ChimeraX-FigureStyle" version="0.1"
+            package="chimerax.figure_style"
+            minSessionVersion="1" maxSessionVersion="1">
+  <Author>Lukas W. Bauer (AI-assisted development by Claude, Anthropic)</Author>
+  <Email></Email>
+  <URL>https://github.com/LUKASinScience</URL>
+  <Synopsis>Named style templates and batch rendering for publication figures</Synopsis>
+  <Description>
+    FigureStyle lets you define, save, and apply named visual style templates
+    in ChimeraX. Templates store lighting, background, silhouettes, cartoon style,
+    and export settings. A batch renderer applies a template to a folder of
+    structures and saves PNG images.
+  </Description>
+  <Categories>
+    <Category name="General"/>
+  </Categories>
+  <DataFiles>
+    <DataDir>icons</DataDir>
+  </DataFiles>
+  <Dependencies>
+    <Dependency name="ChimeraX-Core" version=">=1.9"/>
+  </Dependencies>
+  <Classifiers>
+    <ChimeraXClassifier>ChimeraX :: Tool :: FigureStyle :: General ::
+      Publication figure style templates and batch rendering</ChimeraXClassifier>
+    <ChimeraXClassifier>ChimeraX :: Command :: figurestyle apply ::
+      General :: Apply a named style template to the current session</ChimeraXClassifier>
+  </Classifiers>
+  <Providers manager="toolbar">
+    <Provider tab="Graphics" section="Figure Style" name="figurestyle_toolbar"
+      icon="figure_style.png" display_name="FigureStyle"
+      description="Open the FigureStyle template editor"/>
+  </Providers>
+</BundleInfo>
