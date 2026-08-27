@@ -11,6 +11,9 @@ build/
 dist/
 *.whl
 
+# Zensical docs site build output (deployed via GitHub Actions, not committed)
+site/
+
 # Editors
 .vscode/
 .idea/
