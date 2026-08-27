@@ -4,6 +4,7 @@
   <Author>Lukas W. Bauer (AI-assisted development by Claude, Anthropic)</Author>
   <Email></Email>
   <URL>https://github.com/LUKASinScience</URL>
+  <License>MIT</License>
   <Synopsis>Reusable named style templates for publication-ready figures</Synopsis>
   <Description>
     FigureStyle lets you define, save, and apply named visual style templates in
@@ -26,6 +27,7 @@
       Reusable named style templates for publication-ready figures</ChimeraXClassifier>
     <ChimeraXClassifier>ChimeraX :: Command :: figurestyle apply ::
       General :: Apply a named style template to the current session</ChimeraXClassifier>
+    <PythonClassifier>License :: OSI Approved :: MIT License</PythonClassifier>
   </Classifiers>
   <Providers manager="toolbar">
     <Provider tab="Graphics" section="Figure Style" name="figurestyle_toolbar"
