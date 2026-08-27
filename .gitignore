@@ -19,8 +19,10 @@ dist/
 .claude/
 CLAUDE.md
 
-# Local-only generated docs
-ChimeraX-FigureStyle-README.pdf
+# Local-only generated docs (never push)
+*.pdf
+GUIDE-preview.html
+TOOLSHED.md
 
 # macOS
 .DS_Store

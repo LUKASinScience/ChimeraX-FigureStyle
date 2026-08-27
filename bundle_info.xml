@@ -1,4 +1,4 @@
-<BundleInfo name="ChimeraX-FigureStyle" version="0.1"
+<BundleInfo name="ChimeraX-FigureStyle" version="1.0.0"
             package="chimerax.figure_style"
             minSessionVersion="1" maxSessionVersion="1">
   <Author>Lukas W. Bauer (AI-assisted development by Claude, Anthropic)</Author>
