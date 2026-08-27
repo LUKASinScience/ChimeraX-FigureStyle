@@ -5,6 +5,8 @@ FigureStyle turns that into a one-click template: define lighting, per-secondary
 style, coloring (including AlphaFold pLDDT), and export settings once, save it under a name, and
 apply it to any structure — from the GUI or the command line.
 
+**Full walkthrough with screenshots: [GUIDE.md](GUIDE.md).**
+
 ## Opening the tool
 
 - **Tools menu** → General → FigureStyle, or
