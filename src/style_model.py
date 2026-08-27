@@ -136,7 +136,8 @@ class FigureStyleTemplate:
         return cmds
 
     def export_cmd(self, path: str) -> str:
-        transparent = "true" if self.transparent_bg else "false"
+        # JPEG has no alpha channel — never request transparency for it.
+        transparent = "true" if (self.transparent_bg and self.image_format != "jpeg") else "false"
         return (f"save {path} width {self.image_width} height {self.image_height} "
                 f"supersample {self.supersample} transparentBackground {transparent}")
 

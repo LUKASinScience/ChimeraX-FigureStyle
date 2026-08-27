@@ -658,7 +658,7 @@ class FigureStyleTool(ToolInstance):
         self.divisions_spin.setValue(t.cartoon_divisions)
         self.bar_scale_spin.setValue(t.cartoon_bar_scale)
         self.bar_sides_spin.setValue(t.cartoon_bar_sides)
-        self.radius_edit.setText(t.cartoon_radius)
+        self.radius_edit.setText(str(t.cartoon_radius))
         self.worm_check.setChecked(t.cartoon_worm)
         self.show_atoms_check.setChecked(t.show_atoms)
         self.atom_style_combo.setCurrentText(t.atom_style)
@@ -760,15 +760,13 @@ class FigureStyleTool(ToolInstance):
             return
         try:
             imported = import_templates(path)
-        except (OSError, ValueError, TypeError) as e:
+        except Exception as e:
             QMessageBox.warning(None, "FigureStyle", f"Could not import: {e}")
             return
-        existing = {t.name: i for i, t in enumerate(self.templates)}
+        merged = {t.name: t for t in self.templates}
         for t in imported:
-            if t.name in existing:
-                self.templates[existing[t.name]] = t
-            else:
-                self.templates.append(t)
+            merged[t.name] = t
+        self.templates = list(merged.values())
         save_templates(self.templates)
         self._refresh_list()
 
@@ -804,6 +802,11 @@ class FigureStyleTool(ToolInstance):
         new_name = self.name_edit.text().strip()
         if not new_name:
             QMessageBox.warning(None, "FigureStyle", "Name cannot be empty.")
+            return
+        if new_name == self.current.name and self.current.name in _DEFAULT_NAMES:
+            QMessageBox.warning(
+                None, "FigureStyle",
+                "Built-in templates can't be overwritten — use Copy to make an editable duplicate first.")
             return
         if new_name != self.current.name and new_name in {t.name for t in self.templates}:
             resp = QMessageBox.question(
